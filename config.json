@@ -1,0 +1,40 @@
+{
+  "config":
+  {
+    "dataset": "MIT Adobe FiveK dataset",
+    "display_folder": "/media/song/新加卷/Exposure_correction/Exposure_Correction/experiments/contrastive/visual",
+    "epoch_folder": "/media/song/新加卷/Exposure_correction/Exposure_Correction/experiments/contrastive/epochs",
+    "summary": "/media/song/新加卷/Exposure_correction/Exposure_Correction/experiments/contrastive/summary",
+    "gpus": "0",
+    "main_gpu": "cuda",
+    "data_path": "/media/song/新加卷/Exposure_correction/Exposure_Correction/Data/training",
+    "val_path": "/media/song/新加卷/Exposure_correction/Exposure_Correction/Data/validation",
+    "display_val": "/media/song/新加卷/Exposure_correction/Exposure_Correction/experiments/contrastive/visual_val",
+    "data_workers": 1,
+    "val_workers": 4,
+    "data_shuffle": 1,
+    "val_shuffle": 0,
+    "data_batch": 1,
+    "val_batch": 1,
+
+    "training":
+    {
+      "lr": 0.0001,
+      "lr_d":0.0001,
+      "epochs": 300,
+      "display": 200,
+      "display_iter_light_dir": 400,
+      "record_iter": 50,
+      "continue": false,
+      "epoch": 279,
+      "mode":"train"
+    },
+
+    "test":
+    {
+      "data_path": "/media/song/新加卷/Exposure_correction/Exposure_Correction/real_images",
+      "weight_path": "/media/song/新加卷/Exposure_correction/Exposure_Correction/checkpoints/checkpoint.pth",
+      "output_path": "/media/song/新加卷/Exposure_correction/Exposure_Correction/results"
+    }
+  }
+}
